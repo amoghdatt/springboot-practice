@@ -1,8 +1,6 @@
 package com.bootjpa.jpa.controller;
-
 import com.bootjpa.jpa.dao.ItemRepo;
 import com.bootjpa.jpa.models.Items;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +18,7 @@ public class ItemController {
         repo.save(item);
     }
 
-    
+
     
     @GetMapping("/item/{id}")
     public void getItem(@RequestParam int id){
